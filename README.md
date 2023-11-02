@@ -1,60 +1,67 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/tmxkn1/microsoft-reward-chrome-ext/badge)](https://www.codefactor.io/repository/github/tmxkn1/microsoft-reward-chrome-ext)
+[![CodeFactor](https://www.codefactor.io/repository/github/kressety/microsoft-reward-chrome-ext/badge)](https://www.codefactor.io/repository/github/kressety/microsoft-reward-chrome-ext)
 
 # Microsoft Rewards Bot
 
-A Chrome extension for Microsoft Rewards, which automatically clears PC, mobile and Edge search quests and displays daily point countdown.
+这是一个为Microsoft Rewards开发的Chrome扩展，能自动完成PC、手机和Edge的搜索任务，并显示每日积分倒计时。
 
-This extension will not clear any promotional link or quiz quests and this feature will not be implemented.
+**在原项目的基础上，已添加针对Google trends和GitHub的代理，以方便中国大陆用户使用**。
 
-**This is a bot!**
+该扩展不会清除任何促销链接或小测验任务，也不会实现此功能。
 
-Use at your own risk. I do not take responsibility for any consequence caused by this extension.
+**这是一个机器人！**
 
-# Install from GitHub
+请自行承担风险。我不对此扩展可能导致的任何后果承担责任。
 
-1. Head to [Release](https://github.com/tmxkn1/Microsoft-Reward-Chrome-Ext/releases) and download the latest Source code (zip).
-2. Unzip the downloaded file to somewhere you want to keep it.
-3. Open Chrome.
-4. Go to chrome://extensions/ and enable `Developer mode`.
-5. Select `Load unpacked` and select the `src` folder.
-6. Enable the extension.
+# 从GitHub安装
 
+1. 前往[Release](https://github.com/kressety/Microsoft-Reward-Chrome-Ext/releases)并下载 `Microsoft-Reward-Chrome-Ext-CN.zip` 。
+2. 将下载的文件放置到合适的地方，**不要把它删除**。
+### 对于Chrome用户：
+  1. 打开Chrome。
+  2. 前往 chrome://extensions/ 并启用 `开发人员模式`。
+  3. 将 `Microsoft-Reward-Chrome-Ext-CN.zip` 拖进去。
+  4. 启用该扩展。
+### 对于Edge用户：
+  1. 打开Microsoft Edge。
+  2. 前往 edge://extensions/ 并启用 `开发人员模式`。
+  3. 将 `Microsoft-Reward-Chrome-Ext-CN.zip` 拖进去。
+  4. 启用该扩展。
 
-# Install from Chrome web store
+# 从Chrome/Edge商店安装
 
-Unfortunately, the extension could not make its way to become visible on web store due to ... well ... obvious reasons.
+遗憾的是，由于...明显的原因...此扩展无法在Chrom/Edge商店中显示。
 
-# Use
+# 使用方法
 
-1. Log into [Microsoft Rewards](https://account.microsoft.com/rewards) and [Bing](https://www.bing.com/).
-2. Enjoy.
+1. 登录[Microsoft Rewards](https://account.microsoft.com/rewards)和[Bing](https://www.bing.com/)。
+2. 尽情使用。
 
-*Note: You may need to repeat step 1 every time you restart Chrome.*
+*注：您可能需要在每次重启Chrome时重复第1步。*
 
-# Functionality
+# 功能
 
-### Background Work
+### 后台工作
 
-The extension checks your daily Microsoft Rewards progress every two hours and clears any incomplete search quests. When you have any available quiz/link quests yet to complete, a yellow badge will show with a number indicating the amount of points they worth.
+该扩展每两小时检查一次您的Microsoft Rewards每日进度，并清除任何未完成的搜索任务。当您有任何尚未完成的小测验/链接任务时，会显示一个黄色徽章，上面有一个数字，表示它们的积分值。
 
-### Action Button
+### 动作按钮
 
-1. A button to force check reward progress.
-2. A link to Microsoft Rewards.
-3. Options:
-   1. Compatibility Mode. Toggle to enable/disable a different way of calculating point countdown. Try this if you have any issues with the current point countdown method.
-   2. Copy Debug Info. This will place a bunch of information in your clipboard. The information is not useful for end users.
+1. 强制检查奖励进度的按钮。
+2. 指向Microsoft Rewards的链接。
+3. 选项：
+   1. 兼容性模式。切换以启用/禁用不同的积分倒计时计算方式。如果您对当前的积分倒计时方法有任何问题，请尝试此功能。
+   2. 复制调试信息。这会将一堆信息复制到您的剪贴板。这些信息对最终用户没有用处。
 
-### Action Button Badge
+### 动作按钮徽章
 
-The colour of the badge changes depending on your daily reward progress or the status of the extension:
+根据您的每日奖励进度或扩展的状态，徽章的颜色会发生变化：
 
-![greyLogo](https://github.com/tmxkn1/Microsoft-Reward-Chrome-Ext/blob/master/src/img/grey@1x.png?raw=true) - Just hang on a second. The extension will start to work soon.
+![greyLogo](https://github.com/kressety/Microsoft-Reward-Chrome-Ext/blob/master/src/img/grey@1x.png?raw=true) - 稍等片刻。扩展程序很快就会开始工作。
 
-![blueLogo](https://github.com/tmxkn1/Microsoft-Reward-Chrome-Ext/blob/master/src/img/busy@1x.png?raw=true) - Working hard on doing those search quests for ya!
+![blueLogo](https://github.com/kressety/Microsoft-Reward-Chrome-Ext/blob/master/src/img/busy@1x.png?raw=true) - 正在努力为您完成搜索任务！
 
-![greenLogo](https://github.com/tmxkn1/Microsoft-Reward-Chrome-Ext/blob/master/src/img/done@1x.png?raw=true) - Congratulations! You have completed all quests for today.
+![greenLogo](https://github.com/kressety/Microsoft-Reward-Chrome-Ext/blob/master/src/img/done@1x.png?raw=true) - 恭喜！您已完成今天的所有任务。
 
-![yellowLogo](https://github.com/tmxkn1/Microsoft-Reward-Chrome-Ext/blob/master/src/img/warn@1x.png?raw=true) - Attention! You still have some points to earn through quests.
+![yellowLogo](https://github.com/kressety/Microsoft-Reward-Chrome-Ext/blob/master/src/img/warn@1x.png?raw=true) - 注意！您仍然可以通过任务获得一些积分。
 
-![redLogo](https://github.com/tmxkn1/Microsoft-Reward-Chrome-Ext/blob/master/src/img/err@1x.png?raw=true) - Oops... an error occurred - Check out [Troubleshooting](TROUBLESHOOTING.md).
+![redLogo](https://github.com/kressety/Microsoft-Reward-Chrome-Ext/blob/master/src/img/err@1x.png?raw=true) - 哎呀...发生了一个错误 - 请查看[Troubleshooting](TROUBLESHOOTING.md)。

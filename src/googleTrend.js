@@ -92,7 +92,7 @@ class GoogleTrend {
     }
 
     _getGoogleTrendUrl(yyyymmdd) {
-        return `https://trends.google.com/trends/api/dailytrends?hl=en-US&ed=${yyyymmdd}&geo=US&ns=15`;
+        return `https://google-trends-proxy.mealuet.com/trends/api/dailytrends?hl=en-US&ed=${yyyymmdd}&geo=US&ns=15`;
     }
 
     _getWordsFromJSON(json) {

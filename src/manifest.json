@@ -33,7 +33,7 @@
   },
 
   "permissions": [
-    "https://trends.google.com/trends/*",
+    "https://google-trends-proxy.mealuet.com/trends/*",
     "https://*.microsoft.com/*",
     "https://*.bing.com/*",
     "webRequest",

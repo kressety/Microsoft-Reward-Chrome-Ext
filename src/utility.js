@@ -139,7 +139,7 @@ async function getUA() {
 async function getStableUA() {
     const controller = new AbortController();
     const signal = controller.signal;
-    const fetchProm = fetch('https://raw.githubusercontent.com/tmxkn1/Microsoft-Reward-Chrome-Ext/master/useragents.json', {method: 'GET', signal: signal});
+    const fetchProm = fetch('https://github-proxy.mealuet.com/https://raw.githubusercontent.com/kressety/Microsoft-Reward-Chrome-Ext/master/useragents.json', {method: 'GET', signal: signal});
 
     setTimeout(() => controller.abort(), 3000);
 
@@ -171,7 +171,7 @@ async function getStableUA() {
 async function getUpdatedUA(type='both') {
     const controller = new AbortController();
     const signal = controller.signal;
-    const fetchProm = fetch('https://raw.githubusercontent.com/tmxkn1/UpdatedUserAgents/master/useragents.json', {method: 'GET', signal: signal});
+    const fetchProm = fetch('https://github-proxy.mealuet.com/https://raw.githubusercontent.com/kressety/UpdatedUserAgents/master/useragents.json', {method: 'GET', signal: signal});
 
     setTimeout(() => controller.abort(), 3000);
 
