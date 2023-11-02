@@ -31,7 +31,7 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GH_PERSONNAL_TOKEN }}"
-        automatic_release_tag: ${{ github.ref }}
+        automatic_release_tag: ${{ github.run_number }}-${{ github.sha }}
         prerelease: false
         files: |
           dist/Microsoft-Reward-Chrome-Ext-CN.zip
